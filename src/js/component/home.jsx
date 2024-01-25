@@ -21,10 +21,10 @@ const Home = () => {
 						type="text"
 						onChange={(e) => setInputValue(e.target.value)} 
 						value={inputValue}
-						onKeyPress={(e) => {
+						onKeyDown={(e) => {
 							if (e.key === "Enter") { 
 								setTodos(todos.concat(inputValue));
-								setInputValue = "";
+								setInputValue ("");
 							}
 						}}
 							placeholder="what do you need to do?"/>
